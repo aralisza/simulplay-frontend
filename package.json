@@ -4,9 +4,9 @@
   "description": "Frontend of Simulplay",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/eslint .",
-    "app": "node index.js"
+    "start": "NODE_PATH=. node index.js",
+    "test": "NODE_PATH=. ./node_modules/.bin/jasmine",
+    "lint": "NODE_PATH=. ./node_modules/.bin/eslint ."
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/aralisza/simulplay-frontend#readme",
   "devDependencies": {
     "eslint": "^3.18.0",
-    "eslint-config-google": "^0.7.1"
+    "eslint-config-google": "^0.7.1",
+    "jasmine": "^2.5.3"
   }
 }
